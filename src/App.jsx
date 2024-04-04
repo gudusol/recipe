@@ -15,7 +15,7 @@ function App() {
     ...greenRoutes,
     ...hallaRoutes,
   ]);
-  return <RouterProvider router={router} />;
+  return <RouterProvider basename={process.env.PUBLIC_URL} router={router} />;
 }
 
 export default App;
